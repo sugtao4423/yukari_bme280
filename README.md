@@ -7,7 +7,7 @@ BME280で取得した温度と湿度を読み上げてくれる
 ## Require
 * 温度の取得  
 [SWITCHSCIENCE/BME280](https://github.com/SWITCHSCIENCE/BME280)をforkした  
-[sugtao4423/BME280](https://github.com/sugtao4423/BME280)をphpから使用
+[sugtao4423/BME280](https://github.com/sugtao4423/BME280)をphp or goから使用
 
 * 読み上げ  
  `aplay` を使用
@@ -24,6 +24,10 @@ voices/percent_end.wav | パーセントです
 ## Usage
 * `php /home/hoge/yukari_bme280/yukari_bme280.php`  
 PHP内の `$YUKARI_VOICE_DIR` と `$BME280_PYTHON` を適宜変更すること
+
+* `go run /home/hoge/yukari_bme280/yukari_bme280.go`  
+Go内の `YUKARI_VOICE_DIR` と `BME280_PYTHON` を適宜変更すること  
+`go build yukari_bme280.go` でコンパイルして `./yukari_bme280` として使用することも可能
 
 * Amazon Dash Buttonと連携
     - `bash /home/hoge/yukari_bme280/dash.sh`  
